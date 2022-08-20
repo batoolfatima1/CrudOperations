@@ -50,7 +50,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextRollNumber" />
 
     <Button
-        android:id="@+id/buttonViewAll"
+        android:id="@+id/ViewAll"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -65,20 +65,10 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:text="Add"
-        app:layout_constraintBottom_toBottomOf="@+id/buttonViewAll"
+        app:layout_constraintBottom_toBottomOf="@+id/ViewAll"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/buttonViewAll"
+        app:layout_constraintTop_toTopOf="@+id/ViewAll"
         app:layout_constraintVertical_bias="0.0" />
-
-    <ListView
-        android:id="@+id/listViewStudent"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonAdd" />
 
     <Button
         android:id="@+id/button3"
@@ -87,7 +77,7 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="4dp"
         android:text="delete"
-        app:layout_constraintStart_toEndOf="@+id/buttonViewAll"
+        app:layout_constraintStart_toEndOf="@+id/ViewAll"
         app:layout_constraintTop_toBottomOf="@+id/switchStudent" />
 
     <Button
@@ -99,6 +89,16 @@
         android:text="UPDATE"
         app:layout_constraintStart_toEndOf="@+id/button3"
         app:layout_constraintTop_toBottomOf="@+id/switchStudent" />
+
+    <ListView
+        android:id="@+id/listViewStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAdd" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
